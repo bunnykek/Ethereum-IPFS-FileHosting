@@ -1,0 +1,15 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.anim-progress-bar {
+	transform-origin: 0% 50%;
+	animation: anim-progress-bar 2s infinite linear;
+}
+@keyframes anim-progress-bar {
+	0% { transform: translateX(50%) scaleX(0.5); }
+	50% { transform: translateX(0) scaleX(0.5); }
+	100% { transform: translateX(50%) scaleX(0.5); }
+}
+
