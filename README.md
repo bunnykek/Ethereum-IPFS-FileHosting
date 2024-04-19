@@ -3,7 +3,7 @@ File hosting service powered by etherium smart contracts and decentralized IPFS 
 
 
 ### Features
-- Decentralized.
+- Blockchained and decentralized.
 - Automated via smart contracts.
 - File sharing with friends.
 - Files are AES-256 encrypted in client-side and then uploaded to the IPFS.
