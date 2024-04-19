@@ -1,5 +1,5 @@
 # Ethereum-IPFS-FileHosting
-File hosting service powered by etherium smart contracts and decentralized IPFS storage.         
+File hosting service powered by Ethereum smart contracts and decentralized IPFS storage.         
 
 
 ### Features
