@@ -6,7 +6,7 @@ module.exports = {
   networks: {
     hardhat: {
       accounts: {
-          mnemonic: "cave march choose what spy bid liquid trap want pioneer faculty ability",
+          mnemonic: "XXXX XXX XXXX XXXXX XXX XXXXX XXXX XXX XXX",
       },
       chainId: 1337
     }
