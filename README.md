@@ -1,38 +1,61 @@
-# create-svelte
+# Ethereum-IPFS-FileHosting
+File hosting service powered by etherium smart contracts and decentralized IPFS storage.         
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-## Creating a project
+### Features
+- Decentralized.
+- Automated via smart contracts.
+- File sharing with friends.
+- Files are AES-256 encrypted in client-side and then uploaded to the IPFS.
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Instructions
+- `git clone https://github.com/bunnykek/Ethereum-IPFS-FileHosting`
+- Install Node.js and git.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
 
-# create a new project in my-app
-npm create svelte@latest my-app
+#### Hardhat-Metamask setup
+- Install Metamask browser [extension](https://metamask.io/download/). Note the wallet `mnemonic` key when you setup.
+```
+cd Ethereum-IPFS-FileHosting/hardhat
+npm i
+```
+- [Connecting metamask and hardhat](https://docs.metamask.io/wallet/how-to/run-devnet/)
+
+
+#### IPFS-Pinata setup
+- Register to [Pinata](https://www.pinata.cloud/) and grab the API tokens.
+- Rename `.ENVR` to `.env` and fill the respective Pinata tokens.
+
+#### Front-end setup
+```
+cd Ethereum-IPFS-FileHosting
+npm i
 ```
 
-## Developing
+#### Starting a local etherium node
+```
+cd Ethereum-IPFS-FileHosting/hardhat
+npx hardhat node
+// let this terminal running in background.
+```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+#### Deploying the smart contract.
+```
+cd Ethereum-IPFS-FileHosting/hardhat
+npx hardhat run scripts/deploy.js --network localhost
+```
+Note the deployed contract address and set it inside `.env` file.
 
-```bash
+#### Starting the frontend
+```
+cd Ethereum-IPFS-FileHosting
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+#### Flow-chart
+![BlockChainFlow-Page-1 (1) (1)](https://github.com/bunnykek/Ethereum-IPFS-FileHosting/assets/67633271/fb30a15b-4d20-4e3c-a24b-36209cb9e423)
 
-To create a production version of your app:
+#### Screenshots
+![collage (4)](https://github.com/bunnykek/Ethereum-IPFS-FileHosting/assets/67633271/47d48100-c126-4344-974f-dc19bf426061)
 
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+#### Don't forget to drop a star if this project is useful to you.
